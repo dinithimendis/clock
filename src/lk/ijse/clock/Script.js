@@ -6,7 +6,7 @@ const hourElement = [];
 for (let i = 1; i <= 12; i++) {
     //console.log(i);
     hourElement.push(
-       `<span><p>${i}</p></span>`
+       `<span style="--index:${i}"><p>${i}</p></span>`
     );
 
 }

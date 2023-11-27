@@ -26,3 +26,15 @@ body {
     background: brown;
     border-radius: 50%;
 }
+
+.hours span {
+    position: absolute;
+     /*360/12 = 30*/
+    transform: rotate(calc(var(--index) * 30deg));
+    inset: 6px;
+}
+
+.hours span p {
+    font-size: 50px;
+    transform: rotate(calc(var(--index) * -30deg));
+}
