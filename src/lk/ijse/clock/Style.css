@@ -19,6 +19,7 @@ body {
     height: 500px;
     /*background: darkcyan;*/
     border-radius: 50%;
+
 }
 
 .hours {
@@ -27,6 +28,9 @@ body {
     height: 100%;
     /*background: brown;*/
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hours span {
@@ -42,4 +46,34 @@ body {
     transform: rotate(calc(var(--index) * -30deg));
     color: #081b29;
     text-shadow: 0 0 10px #081b29;
+}
+
+.clock-hands {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-hands .hand {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.clock-hands .hour {
+    width: 320px;
+    height: 320px;
+    border: 2px solid white;
+}
+
+.clock-hands .minute {
+    width: 450px;
+    height: 450px;
+    border: 2px solid rebeccapurple;
+}
+
+.clock-hands .second {
+    width: 480px;
+    height: 480px;
+    border: 2px solid darkred;
 }
