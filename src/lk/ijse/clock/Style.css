@@ -58,6 +58,13 @@ body {
 .clock-hands .hand {
     position: absolute;
     border-radius: 50%;
+    justify-content: center;
+    display: flex;
+}
+
+.clock-hands .hand i {
+    display: inline-block;
+    transform-origin: bottom;
 }
 
 .clock-hands .hour {
@@ -66,14 +73,38 @@ body {
     border: 2px solid white;
 }
 
+.clock-hands .hour i {
+    width: 8px;
+    /*half height from parent*/
+    height: 160px;
+    background: red;
+    transform: rotate(30deg);
+}
+
 .clock-hands .minute {
     width: 450px;
     height: 450px;
     border: 2px solid rebeccapurple;
 }
 
+.clock-hands .minute i {
+    width: 6px;
+    /*half height from parent*/
+    height: 225px;
+    background: yellow;
+    transform: rotate(210deg);
+}
+
 .clock-hands .second {
     width: 480px;
     height: 480px;
     border: 2px solid darkred;
+}
+
+.clock-hands .second i {
+    width: 4px;
+    /*half height from parent*/
+    height: 240px;
+    background: white;
+    transform: rotate(150deg);
 }
