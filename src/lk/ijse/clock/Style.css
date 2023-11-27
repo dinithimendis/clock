@@ -9,7 +9,8 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: midnightblue;
+    background: #d1c432;
+    overflow: hidden;
 }
 
 .clock {
@@ -39,6 +40,6 @@ body {
 .hours span p {
     font-size: 50px;
     transform: rotate(calc(var(--index) * -30deg));
-    color: darkcyan;
-    text-shadow: 0 0 10px darkcyan;
+    color: #081b29;
+    text-shadow: 0 0 10px #081b29;
 }
