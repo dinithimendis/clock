@@ -10,18 +10,20 @@ body {
     align-items: center;
     min-height: 100vh;
     /*overflow: hidden;*/
+    background: #d1c432;
 }
 
 .clock {
     position: relative;
     width: 500px;
     height: 500px;
-    background: darkcyan;
+    background-color: #081b29;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 .number {
     transform: rotate(calc(30deg * var(--n)));
@@ -29,11 +31,13 @@ body {
     text-align: center;
     inset: 20px;
     font-size: 40px;
+    text-shadow: 0 0 12px #d1c432;
 }
 
 .number b {
     transform: rotate(calc(-30deg * var(--n)));
     display: inline-block;
+    color: white;
 }
 
 .center-dot {
@@ -41,7 +45,8 @@ body {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: #081b29;
+    background: white;
+    border: 5px solid #d1c432;
 }
 
 .hour-hand, .minute-hand, .second-hand {
@@ -51,22 +56,23 @@ body {
     bottom: 50%;
     transform: translate(-50%) rotate(calc(var(--rotate) * 1deg));
     transform-origin: bottom;
+    border-radius: 30px 30px 0 0;
 }
 
 .hour-hand {
     width: 12px;
     height: 130px;
-    background: white;
+    background: linear-gradient(to top, white,#d1c432);
 }
 
 .minute-hand {
     width: 12px;
     height: 190px;
-    background: greenyellow;
+    background: linear-gradient(to top, white,#d1c432);
 }
 
 .second-hand {
     width: 6px;
     height: 210px;
-    background: red;
+    background: linear-gradient(to top, white,#d1c432);
 }
